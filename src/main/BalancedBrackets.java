@@ -28,7 +28,8 @@ public class BalancedBrackets {
             if (ch == '[') {
                 brackets++;
                 openIdx = idx;
-            } else if (ch == ']') {
+            }
+            if (ch == ']') {
                 closeIdx = idx;
                 if (closeIdx > openIdx) {
                     brackets--;
